@@ -10,8 +10,11 @@ This repository contains solutions to selected exercises from Mosh Hamedani's C#
 - **_imtermediate/StackOverflowPost.cs**  
   Models a simple StackOverflow post with properties for title, description, creation time, and voting (upvote/downvote). It demonstrates encapsulation and basic class design.
 
+- **_imtermediate/Stack_LIFO.cs**  
+  Implements a custom `Stack` class that simulates a Last-In-First-Out (LIFO) data structure. It includes methods for pushing, popping, peeking, and clearing items, along with exception handling for invalid operations.
+
 - **_imtermediate/Program.cs**  
-  Entry point for the application. Allows the user to select and run either the StopWatch or StackOverflowPost exercise from the console.
+  Entry point for the application. Allows the user to select and run exercises from the console.
 
 ## How to Run
 
@@ -21,6 +24,7 @@ This repository contains solutions to selected exercises from Mosh Hamedani's C#
    You will be prompted to choose an exercise:
    - Enter `1` for the StopWatch demo.
    - Enter `2` for the StackOverflowPost demo.
+   - Enter `3` for the Stack demo.
 
 ## Learning Goals
 
@@ -28,6 +32,7 @@ This repository contains solutions to selected exercises from Mosh Hamedani's C#
 - Understand encapsulation and state management.
 - Implement simple exception handling.
 - Gain experience with console applications in .NET.
+- Learn about data structures like Stack and their operations.
 
 ## Notes
 

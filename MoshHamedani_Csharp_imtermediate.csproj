@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="StackOverflowPost.cs" />
+    <Compile Include="Stack_LIFO.cs" />
     <Compile Include="StopWatch.cs" />
   </ItemGroup>
   <ItemGroup>

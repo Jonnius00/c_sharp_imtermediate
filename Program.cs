@@ -1,4 +1,5 @@
 using System;
+using MoshHamedani_C__imtermediate;
 
 // uses a single Main method that lets to choose which file to run:
 namespace MoshHamedani_Csharp_imtermediate
@@ -20,6 +21,9 @@ namespace MoshHamedani_Csharp_imtermediate
                     break;
                 case "2":
                     StackOverflowPostProgram.Run();
+                    break;
+                case "3":
+                    StackProgram.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");

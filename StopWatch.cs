@@ -40,7 +40,7 @@ namespace MoshHamedani_Csharp_imtermediate
             _duration += _start_time.Value - _stop_time.Value;
         }
 
-        // provides controlled, read-only access to the stopwatch’s total measured duration,
+        // provides controlled, read-only access to a class member,
         // while keeping the actual storage field _duration private.
         public TimeSpan Duration => _duration;
 
