@@ -8,7 +8,7 @@ namespace MoshHamedani_C__imtermediate
     {
         // PROPERTIES
         private List<object> _items;
-
+        
         // expression-bodied member syntax, provides a concise way 
         // to define class members that return a single expression. 
         // public int Count { get{ return _items.Count; } }
@@ -22,6 +22,10 @@ namespace MoshHamedani_C__imtermediate
         }
 
         // METHODS
+
+        // allows controlled access to the collection's items.
+        public IEnumerable<object> GetItems() { return _items; }
+
         //stores the given object on top of the stack
         public void Push(object obj) {
             if ( obj == null)
@@ -61,17 +65,23 @@ namespace MoshHamedani_C__imtermediate
         public static void Run()
         {
             // Create a stack
-            var stack = new Stack();
+            Stack stack = new Stack();
+
             // Push elements onto the stack
             stack.Push(1);
             stack.Push(2);
             stack.Push(3);
+            
+            Console.Write($"\nLIFO stack created and filled up: ");
+            // foreach (var item in stack.GetItems()) { Console.Write(item + " "); }
+            Console.WriteLine( string.Join(" ", stack.GetItems()) );
 
             // Peek at the top element
-            Console.WriteLine($"Top element: {stack.Peek()}");
+            Console.WriteLine($"top element:\t {stack.Peek()}");
             // Pop elements from the stack
-            Console.WriteLine($"Popped element: {stack.Pop()}");
-            Console.WriteLine($"Popped element: {stack.Pop()}");
+            Console.WriteLine($"next popped:\t {stack.Pop()}");
+            Console.WriteLine($"and next one:\t {stack.Pop()}");
+
             // Check if the stack is empty
             Console.WriteLine($"Is stack empty? {stack.Count == 0}");
         }
