@@ -10,7 +10,8 @@ namespace MoshHamedani_Csharp_imtermediate
         {
             Console.WriteLine("Choose exercise: " +
                 "\n1) StopWatch " +
-                "\n2) StackOverflowPost"
+                "\n2) StackOverflowPost" + 
+                "\n3) Stack LIFO datastructure"
                 );
 
             var choice = Console.ReadLine();
