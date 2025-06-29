@@ -9,9 +9,10 @@ namespace MoshHamedani_Csharp_imtermediate
         static void Main(string[] args)
         {
             Console.WriteLine("Choose exercise: " +
-                "\n1) StopWatch " +
-                "\n2) StackOverflowPost" + 
-                "\n3) Stack LIFO datastructure"
+                "\n1) StopWatch shows OOP abstraction" +
+                "\n2) StackOverflowPost shows OOP encaplsulation" + 
+                "\n3) implemeting Stack LIFO datastructure using inheritance" +
+                "\n4) Mocking SQL db connection using polymorphism"
                 );
 
             var choice = Console.ReadLine();
@@ -25,6 +26,9 @@ namespace MoshHamedani_Csharp_imtermediate
                     break;
                 case "3":
                     StackProgram.Run();
+                    break;
+                case "4":
+                    DbCommand_Program.Run();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
