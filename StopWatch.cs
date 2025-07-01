@@ -20,10 +20,10 @@ namespace MoshHamedani_Csharp_imtermediate
         private DateTime? _start_time;
         private DateTime? _stop_time;
         private TimeSpan _duration;
-        private bool _isRunning;
+        private bool _isRunning; // booleans are initialized to false by default
 
         public void Start() {
-            if (_isRunning)
+            if (_isRunning) // validation has been done at beginneng by convention
                 throw new InvalidOperationException("Stopwatch is already running.");
 
             _start_time = DateTime.Now;
@@ -32,7 +32,7 @@ namespace MoshHamedani_Csharp_imtermediate
 
         public void Stop() {
             if (!_isRunning) // Check if the stopwatch is actually running before stopping
-                throw new InvalidOperationException("Stopwatch is already running.");
+                throw new InvalidOperationException("Stopwatch is not running.");
             _isRunning = false;
 
             _stop_time = DateTime.Now;
