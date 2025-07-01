@@ -7,7 +7,7 @@ namespace MoshHamedani_C__imtermediate
     internal class Stack
     {
         // PROPERTIES
-        private List<object> _items;
+        private readonly List<object> _items;
         
         // expression-bodied member syntax, provides a concise way 
         // to define class members that return a single expression. 
@@ -39,10 +39,11 @@ namespace MoshHamedani_C__imtermediate
            if (IsEmpty)
                 throw new InvalidOperationException("Cannot pop from an empty stack");
 
-            // var topItem = _items.Last();        // Variant 1 dependant on System.Linq; 
-           var topItem = _items[_items.Count - 1]; // Variant 2 more explicit
+            int lastIndex = _items.Count - 1;
+            // var topItem = _items.Last();     // Variant 1 dependant on System.Linq; 
+            var topItem = _items[lastIndex];    // Variant 2 more explicit
 
-           _items.RemoveAt(_items.Count - 1);
+           _items.RemoveAt(lastIndex);
            // _items.RemoveAll(x => x == topItem); // less efficient as it iterates over the list
 
            return topItem;
