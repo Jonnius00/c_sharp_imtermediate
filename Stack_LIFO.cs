@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace MoshHamedani_C__imtermediate
 {
-    internal class Stack
+    public class Stack
     {
         // PROPERTIES
         private readonly List<object> _items;

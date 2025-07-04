@@ -45,6 +45,7 @@
     <Compile Include="StackOverflowPost.cs" />
     <Compile Include="Stack_LIFO.cs" />
     <Compile Include="StopWatch.cs" />
+    <Compile Include="WorkflowEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />

@@ -12,23 +12,27 @@ namespace MoshHamedani_Csharp_imtermediate
                 "\n1) StopWatch shows OOP abstraction" +
                 "\n2) StackOverflowPost shows OOP encaplsulation" + 
                 "\n3) implemeting Stack LIFO datastructure using inheritance" +
-                "\n4) Mocking SQL db connection using polymorphism"
+                "\n4) Mocking SQL db connection using polymorphism + " +
+                "\n5) Workflow Engine using interfaces"
                 );
 
             var choice = Console.ReadLine();
             switch (choice)
             {
                 case "1":
-                    StopWatchProgram.Run();
+                    Console.WriteLine(); StopWatchProgram.Run(); Console.ReadLine();
                     break;
                 case "2":
-                    StackOverflowPostProgram.Run();
+                    Console.WriteLine(); StackOverflowPostProgram.Run(); Console.ReadLine();
                     break;
                 case "3":
-                    StackProgram.Run();
+                    Console.WriteLine(); StackProgram.Run(); Console.ReadLine();
                     break;
                 case "4":
-                    DbCommand_Program.Run();
+                    Console.WriteLine(); DbCommand_Program.Run(); Console.ReadLine();
+                    break;
+                case "5":
+                    Console.WriteLine(); WorkflowEngine_Program.Run(); Console.ReadLine();
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
